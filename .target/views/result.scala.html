@@ -1,0 +1,15 @@
+@(msg: String, answer: Form[Application.SampleForm])
+
+@main("リザルト画面") {
+
+    <h1>Blue Beetle</h1>
+    <h2>後悔クリーナー</h2>
+    
+     @* jQueryのエフェクトにフォームヘルパーで送信された文字列格納 *@
+	<span>What you regret is</span>   
+	<div id="title">@msg</div>
+	<span>, right?</span>
+
+}
+
+
