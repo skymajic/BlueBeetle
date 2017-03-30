@@ -1,20 +1,42 @@
 @(msg: String, formOne: Form[Application.SampleForm])
 
 @main("LP") {
-
-    <h1>Blue Beetle</h1>
-    <h2>後悔クリーナー</h2>
+	
+	<header>
+	  <h1>Blue Beetle</h1>
+      <h2>:) 後悔クリーナー ;)</h2>
+	</header>
+	  
     
-    <p>@msg</p>
+    
+    <div id="menu">
+    	<h1>MENU</h1>
+    	<ul>
+    		<li><a href="#">いやー誰でも後悔の一つや二つあるでしょう</a></li>
+    		<li><a href="#">平和な人生なんてないんですよ、多分</a></li>
+    		<li><a href="#">楽園なんてない</a></li>
+    	</ul>
+    </div>
+    
+    
      
-     @helper.form(action = routes.Application.send){
+     <div id="entry">
+     	<p id="msg">@msg</p>
+     
+     	@helper.form(action = routes.Application.send){
      	
-     	@(helper.inputText(
-     		field = formOne("regret"),
-     		args = 'size->50
-     	))
+     		@(helper.inputText(
+     			field = formOne("regret"),
+     			args = 'size->25
+     		))
      	
      	<input type="submit">
-     }
+     	}
+     </div>
+     
+     
+     <footer>
+     	フッター
+     </footer>
 
 }

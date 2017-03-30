@@ -2,13 +2,26 @@
 
 @main("リザルト画面") {
 
-    <h1>Blue Beetle</h1>
-    <h2>後悔クリーナー</h2>
+    <header>
+	  <h1>Blue Beetle</h1>
+      <h2>:) 後悔クリーナー ;)</h2>
+	</header>
+    
     
      @* jQueryのエフェクトにフォームヘルパーで送信された文字列格納 *@
-	<span>What you regret is</span>   
-	<div id="title">@msg</div>
-	<span>, right?</span>
+    <div id="result">
+    	<span>What you regret is</span>   
+		<div id="title">@msg</div>
+		<span>, right?</span>
+    </div>
+	
+	
+	<footer>
+		フッター
+	</footer>
+	
+	
+	
 
 }
 

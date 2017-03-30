@@ -17,8 +17,9 @@ public class Application extends Controller {
     	SampleForm sf = new SampleForm();
     	sf.regret = "write here.";
     	Form<SampleForm> form = new Form(SampleForm.class).fill(sf);
-        return ok(index.render("何か後悔はありますか?",form));
+        return ok(index.render("Do you have any regret?",form));
     }
+    
     
     // ルートにPOST送信された際のAction
     public static Result send() {

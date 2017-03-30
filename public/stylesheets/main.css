@@ -1,10 +1,144 @@
+body {
+	margin: 0;
+	font-family: 'Crafty Girls', cursive;
+	font-weight: normal;
+}
+
+header {
+	padding: 12px;
+	background-color: #9eead9;
+	height: 46px;
+	min-width: 500px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	float: left;
+	margin: 0;
+	width: 250px;
+}
+
+header h2 {
+	float: right;
+	margin: 0;
+	width: 250px;
+}
+
+header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#menu {
+	background: #d4e2be;
+	padding: 20px;
+	border-radius: 30px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#menu > h1 {
+	font-size: 23px;
+	margin: 3px 3px 10px 3px;
+}
+
+#menu > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li a {
+	position: relative;
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px 10px 30px;
+	color: black;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+#menu li a:before {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	content: '◆';
+	color: #51b29e;
+	font-size: 15px;
+}
+
+#menu li a:hover {
+	background: #d9c849;
+	cursor: pointer;
+}
+
+#entry {
+	margin: 50px auto 0;
+	padding: 20px;
+	border: 1px solid grey;
+	border-radius: 50%;
+	background: #cad4d9;
+	width: 250px;
+	height: 250px;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
+}
+
+#msg {
+	margin-top: 20px;
+	margin-left: 23px;
+}
+
+form {
+	margin-top: 90px;
+}
+
+dt  {
+	margin-left: 45px;
+}
+
+
+input[type="submit"] {
+	margin-left: 90px;
+	width: 70px;
+	height: 70px;
+	font-size: medium;
+	background-color: orange;
+	color: #fff;
+	border-radius: 50%;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: #f3c667;
+}
+
+input[type="submit"]:focus {
+	outline: none;
+}
+
+
+footer {
+	padding: 12px;
+	background-color: #9eead9;
+	height: 45px;
+	margin-top: 50px;
+}
+
+
+/* result.scala.html */
 #title {
 	width: 230px;
 	height: 80px;
 	background: yellow;
 	border: 1px solid gray;
-	font-family: Verdana, sans-serif;
 	text-align: center;
-	line-height: 80px; 
+	line-height: 80px;
+	color: black;
 }
 
+#result {
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+}
