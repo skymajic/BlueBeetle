@@ -19,6 +19,7 @@ header h1 {
 }
 
 header h2 {
+	font-family: 'Hiragino Maru Gothic ProN';
 	float: right;
 	margin: 0;
 	width: 250px;
@@ -47,6 +48,7 @@ header:after {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	font-family: 'Hiragino Maru Gothic ProN';
 }
 
 #menu li a {
@@ -107,6 +109,7 @@ input[type="submit"] {
 	color: #fff;
 	border-radius: 50%;
 	border: none;
+	font-family: monospace;
 }
 
 input[type="submit"]:hover {
@@ -119,26 +122,71 @@ input[type="submit"]:focus {
 
 
 footer {
-	padding: 12px;
+	padding: 20px;
 	background-color: #9eead9;
-	height: 45px;
+	text-align: center;
 	margin-top: 50px;
+	font-family: 'Hiragino Mincho Pro';
+}
+
+footer p {
+	font-size: 15px;
+}
+
+footer a {
+	color: #000;
+	text-decoration: none;
 }
 
 
+
+
+
+
 /* result.scala.html */
-#title {
-	width: 230px;
+
+.toTop {
+	text-decoration: none;
+	color: #000;
+	margin: 20px auto 0;
+	display: block;
+	padding: 30px;
+	font-size: 20px;
+	background: #d1eee3;
+	width: 130px;
+	height: 15px;
+	line-height: 15px;
+	box-shadow: 0 7px 0 0 grey;
+	position: relative;
+}
+
+.toTop:hover {
+	opacity: 0.5;
+	box-shadow: none;
+	top: 7px;
+}
+
+#result {
+	margin: 0 auto;
+	width: 500px;
+	height: 250px;
+	border: 1px solid black;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+#result h3 {
+	text-align: center;
+}
+
+#result #title {
+	width: 400px;
 	height: 80px;
 	background: yellow;
 	border: 1px solid gray;
 	text-align: center;
 	line-height: 80px;
 	color: black;
-}
-
-#result {
 	margin: 0 auto;
-	width: 500px;
-	height: 500px;
+	cursor: pointer;
 }
