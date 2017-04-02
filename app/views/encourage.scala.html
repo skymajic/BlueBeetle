@@ -1,0 +1,27 @@
+@(msg: String, form: Form[models.Message])
+
+@main("encourage someone") {
+     
+     <div id="helper">
+     
+     <h1>INPUT ENCOURAGE</h1>
+     <h2>@msg</h2>
+     
+     @helper.form(action = routes.Encourage.create){
+     	
+     	@(helper.inputText (
+     		field = form("name")
+     	))
+     	@(helper.textarea (
+     		field = form("message")
+     	))
+     	
+     	<input type="submit">
+     	
+     }
+     </div>
+     
+     <a href="/" class="toTop">to Top Page</a>
+
+}
+

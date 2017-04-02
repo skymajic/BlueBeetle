@@ -5,6 +5,7 @@
 
 create table message (
   id                        bigint auto_increment not null,
+  name                      varchar(255),
   message                   varchar(255),
   constraint pk_message primary key (id))
 ;

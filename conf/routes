@@ -6,8 +6,12 @@
 GET     /                               controllers.Application.index()
 POST    /result							controllers.Application.send()
 
-GET     /hoge							controllers.Hoge.hoge()
+GET     /encourage					    controllers.Encourage.encourage()
+POST    /create							controllers.Encourage.create()
+
+GET     /encouraged						controllers.Encourage.encouraged()
 
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+

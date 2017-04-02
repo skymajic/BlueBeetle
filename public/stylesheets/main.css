@@ -35,7 +35,7 @@ header:after {
 	background: #d4e2be;
 	padding: 20px;
 	border-radius: 30px;
-	width: 250px;
+	width: 300px;
 	margin: 0 auto;
 }
 
@@ -139,8 +139,42 @@ footer a {
 }
 
 
+/* encourage.scala.html */
 
+#helper {
+	margin: 0 auto;
+	width: 500px;
+	height: 400px;
+	padding: 10px 30px;
+}
 
+#helper h1,h2 {
+	text-align: center;
+	padding-left: 30px;
+}
+
+#helper form {
+	margin-top: 20px;
+}
+
+#helper form dl {
+	text-align: center;
+}
+
+#helper form input[type="submit"] {
+	margin-left: 230px;
+}
+
+/* encouraged.scala.html */
+table {
+	margin: 0 auto;
+	width: 400px;
+}
+
+table th, td {
+	text-align: center;
+	border: 1px solid gray;
+}
 
 
 /* result.scala.html */

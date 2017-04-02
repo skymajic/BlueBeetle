@@ -1,5 +1,8 @@
 package controllers;
 
+import java.util.List;
+
+import models.Message;
 import play.*;
 import play.data.Form;
 import play.mvc.*;
@@ -21,17 +24,20 @@ public class Application extends Controller {
     }
     
     
-    // ルートにPOST送信された際のAction
+    
+    // /resultに際のAction
     public static Result send() {
+    	
     	Form<SampleForm> f = new Form(SampleForm.class).bindFromRequest();
     	if (!f.hasErrors()) {
+    		// リザルト画面にフォームで受け取った値を返す。
     		SampleForm sf = f.get();
     		String response = sf.regret;
     		return ok(result.render(response,f));
     	} else {
     		return badRequest(index.render("ERROR",f));
     	}
+    	
     }
     
-
 }
