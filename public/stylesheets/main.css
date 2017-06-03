@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+/* 共通 */
+
 body {
 	margin: 0;
 	font-family: 'Crafty Girls', cursive;
@@ -9,7 +13,6 @@ header {
 	background-color: #9eead9;
 	height: 46px;
 	min-width: 500px;
-	margin-bottom: 50px;
 }
 
 header h1 {
@@ -31,49 +34,32 @@ header:after {
 	clear: both;
 }
 
-#menu {
-	background: #d4e2be;
+div.container {
+	width: 1280px;
+	height: 444px;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+footer {
 	padding: 20px;
-	border-radius: 30px;
-	width: 300px;
-	margin: 0 auto;
+	background-color: #9eead9;
+	text-align: center;
+	font-family: 'Hiragino Mincho Pro';
 }
 
-#menu > h1 {
-	font-size: 23px;
-	margin: 3px 3px 10px 3px;
+footer p {
+	font-size: 15px;
 }
 
-#menu > ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-family: 'Hiragino Maru Gothic ProN';
-}
-
-#menu li a {
-	position: relative;
+footer a {
+	color: #000;
 	text-decoration: none;
-	display: block;
-	padding: 10px 5px 10px 30px;
-	color: black;
-	font-size: 15px;
-	line-height: 1.5;
 }
 
-#menu li a:before {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	content: '◆';
-	color: #51b29e;
-	font-size: 15px;
-}
+/* トップページ */
 
-#menu li a:hover {
-	background: #d9c849;
-	cursor: pointer;
-}
+
 
 #entry {
 	margin: 50px auto 0;
@@ -121,60 +107,9 @@ input[type="submit"]:focus {
 }
 
 
-footer {
-	padding: 20px;
-	background-color: #9eead9;
-	text-align: center;
-	margin-top: 50px;
-	font-family: 'Hiragino Mincho Pro';
-}
-
-footer p {
-	font-size: 15px;
-}
-
-footer a {
-	color: #000;
-	text-decoration: none;
-}
 
 
-/* encourage.scala.html */
 
-#helper {
-	margin: 0 auto;
-	width: 500px;
-	height: 400px;
-	padding: 10px 30px;
-}
-
-#helper h1,h2 {
-	text-align: center;
-	padding-left: 30px;
-}
-
-#helper form {
-	margin-top: 20px;
-}
-
-#helper form dl {
-	text-align: center;
-}
-
-#helper form input[type="submit"] {
-	margin-left: 230px;
-}
-
-/* encouraged.scala.html */
-table {
-	margin: 0 auto;
-	width: 400px;
-}
-
-table th, td {
-	text-align: center;
-	border: 1px solid gray;
-}
 
 
 /* result.scala.html */

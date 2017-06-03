@@ -1,6 +1,8 @@
 @(msg: String, answer: Form[Application.SampleForm])
 
 @main("リザルト画面") {
+
+	<div class="container">
  
      @* jQueryのエフェクトにフォームヘルパーで送信された文字列格納 *@
     <div id="result">  
@@ -9,5 +11,7 @@
     </div>
 	
 	<a href="/" class="toTop">to Top Page</a>
+	
+	</div>
 	
 }
